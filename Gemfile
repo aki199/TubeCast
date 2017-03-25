@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 
+# devise
+gem 'devise'
 # For Twitter UI Components inc. navbar
 gem 'bootstrap-sass', '~> 3.3.6'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
