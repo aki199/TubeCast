@@ -11,7 +11,14 @@ class PagesController < ApplicationController
 # back-ned code for pages/profile
 
   def profile
+    # grab the username from the URL as :id
+    if(User.find_by_username(params[:id]))
+    @username = params[:id]
+  else
+    # redirect to 404
+    redirect_to root_path, :notice=> "User not found!"
   end
+end
 # back-ned code for pages/eplore
 
   def eplore
